@@ -3,7 +3,7 @@ import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 Given("I am logged as a restaurant", () => {
     cy.visit("/");
   cy.request("POST", "http://localhost:3001/login", {
-    email: "popa@popa.com",
+    email: "super@admin.com",
     password: "Salut123",
   })
     .then( (response) => {
